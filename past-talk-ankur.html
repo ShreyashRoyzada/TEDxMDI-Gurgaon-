@@ -5,83 +5,151 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Past Talk - Ankur Warikoo | TEDxMDI Gurgaon</title>
     <link rel="stylesheet" href="styles.css">
-    <script src="https://kit.fontawesome.com/yourkitid.js" crossorigin="anonymous"></script> <!-- For icons -->
+    <link rel="icon" type="image/png" href="https://uploads.onecompiler.io/43rzc36m6/43rzd5enk/images__10_-removebg-preview.png">
+    <style>
+        /* Extra styles for past talk page */
+        .past-talk-container {
+            max-width: 1100px;
+            margin: auto;
+            padding: 40px 20px;
+            animation: fadeIn 1s ease-in-out;
+        }
+        .past-talk-header {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+        .past-talk-header h1 {
+            font-size: 2.5rem;
+            color: #e62b1e;
+            animation: slideDown 0.8s ease-in-out;
+        }
+        .past-talk-header h2 {
+            font-size: 1.4rem;
+            font-weight: 400;
+            margin-top: 10px;
+        }
+        .video-container {
+            position: relative;
+            padding-bottom: 56.25%;
+            height: 0;
+            overflow: hidden;
+            margin-bottom: 30px;
+        }
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+        }
+        .past-talk-section {
+            margin-bottom: 40px;
+            line-height: 1.6;
+        }
+        .speaker-bio {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 20px;
+        }
+        .speaker-bio img {
+            width: 200px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+        }
+        .share-section {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .share-icons img {
+            width: 40px;
+            margin: 0 10px;
+            transition: transform 0.3s ease;
+        }
+        .share-icons img:hover {
+            transform: scale(1.2);
+        }
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(10px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+        @keyframes slideDown {
+            from { opacity: 0; transform: translateY(-20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Header -->
+    <!-- HEADER copied exactly from index.html -->
     <header>
         <nav>
             <div class="logo">
-                <a href="index.html"><img src="https://uploads.onecompiler.io/43rzc36m6/43rzd5enk/images__10_-removebg-preview.png" alt="TEDxMDI Gurgaon"></a>
+                <a href="index.html"><img src="https://uploads.onecompiler.io/43rzc36m6/43rzd5enk/images__10_-removebg-preview.png" alt="TEDxMDI Gurgaon Logo"></a>
             </div>
             <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="speakers.html">Speakers</a></li>
-                <li><a href="past-talk-ankur.html" class="active">Past Talks</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#speakers">Speakers</a></li>
+                <li><a href="index.html#schedule">Schedule</a></li>
+                <li><a href="index.html#team">Team</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+                <li><a href="past-talk-ankur.html" class="active">Past Talk</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Hero Section -->
-    <section class="past-talk-hero">
-        <h1>The Art of Decision Making</h1>
-        <p class="past-talk-meta">By <strong>Ankur Warikoo</strong> | 12 March 2023 | TEDxMDI Gurgaon</p>
-        <img src="https://uploads.onecompiler.io/43rzc36m6/3x2zp2yd7/image%20(2).png" alt="Ankur Warikoo" class="speaker-img">
-    </section>
+    <!-- Past Talk Content -->
+    <main class="past-talk-container">
+        <div class="past-talk-header">
+            <h1>From Passion to Purpose</h1>
+            <h2>Ankur Warikoo | TEDxMDI Gurgaon | 15th March 2023</h2>
+        </div>
 
-    <!-- Video Section -->
-    <section class="past-talk-section">
-        <h2>Watch the Talk</h2>
         <div class="video-container">
             <iframe src="https://www.youtube.com/embed/MlhR0R3sEeo" title="Ankur Warikoo TEDx Talk" frameborder="0" allowfullscreen></iframe>
         </div>
-    </section>
 
-    <!-- Talk Summary -->
-    <section class="past-talk-section">
-        <h2>Talk Summary</h2>
-        <p>
-            In this thought-provoking TEDxMDI Gurgaon talk, entrepreneur and mentor Ankur Warikoo
-            dives deep into the art of decision-making in a world full of uncertainty. He shares
-            personal stories, powerful frameworks, and practical tools to help individuals make
-            better life and career choices. From understanding opportunity cost to embracing failure,
-            Warikoo offers an inspiring roadmap for anyone looking to take control of their future.
-        </p>
-    </section>
+        <section class="past-talk-section">
+            <h3>Talk Summary</h3>
+            <p>
+                In this powerful TEDx talk, Ankur Warikoo shares his journey from being an aspiring astronaut to becoming a successful entrepreneur and mentor.
+                He speaks about the importance of finding your "why", embracing failure, and living life with intention rather than expectation. Through relatable
+                anecdotes and practical wisdom, Warikoo inspires the audience to align their passions with their purpose, creating a life that feels both fulfilling
+                and impactful.
+            </p>
+        </section>
 
-    <!-- Speaker Bio -->
-    <section class="past-talk-section">
-        <h2>About the Speaker</h2>
-        <p>
-            Ankur Warikoo is an entrepreneur, educator, and content creator who has inspired millions
-            through his talks, books, and online courses. Known for his candid storytelling and
-            practical wisdom, Warikoo brings a relatable and actionable approach to personal growth.
-        </p>
-    </section>
+        <section class="past-talk-section speaker-bio">
+            <img src="https://uploads.onecompiler.io/43rzc36m6/3x2zp2yd7/image%20(2).png" alt="Ankur Warikoo">
+            <div>
+                <h3>About the Speaker</h3>
+                <p>
+                    Ankur Warikoo is an Indian entrepreneur, motivational speaker, and angel investor. Former CEO of Nearbuy, he is widely known for his
+                    thought-provoking content on career, personal finance, and self-growth. Warikoo's ability to connect with audiences through honesty and humor
+                    has made him one of India's most beloved public speakers.
+                </p>
+            </div>
+        </section>
 
-    <!-- Share Section -->
-    <section class="past-talk-section">
-        <h2>Share This Talk</h2>
-        <div class="share-icons">
-            <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <div class="share-section">
+            <h3>Share this Talk</h3>
+            <div class="share-icons">
+                <a href="#"><img src="assets/icons/facebook.png" alt="Facebook"></a>
+                <a href="#"><img src="assets/icons/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="assets/icons/linkedin.png" alt="LinkedIn"></a>
+                <a href="#"><img src="assets/icons/instagram.png" alt="Instagram"></a>
+            </div>
         </div>
-    </section>
+    </main>
 
-    <!-- CTA -->
-    <section class="past-talk-section" style="text-align:center;">
-        <a href="nominate.html" class="btn">Nominate a Speaker</a>
-    </section>
-
-    <!-- Footer -->
+    <!-- FOOTER copied exactly from index.html -->
     <footer>
-        <p>&copy; 2025 TEDxMDI Gurgaon. All rights reserved.</p>
+        <div class="footer-content">
+            <p>© 2023 TEDxMDI Gurgaon. All Rights Reserved.</p>
+            <p>TEDx is a program of local, self-organized events that bring people together to share a TED-like experience.</p>
+        </div>
     </footer>
 
 </body>
