@@ -1,0 +1,151 @@
+/* Page-specific styles for past talk */
+
+/* Layout & Fonts */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+}
+
+/* Hero Section */
+.hero {
+    background: linear-gradient(to bottom right, #ff2b06, #b30000);
+    text-align: center;
+    padding: 60px 20px;
+}
+
+.hero-content h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.hero-content h3 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.talk-date {
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+/* Video */
+.video-section {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+/* Summary */
+.summary, .speaker, .contact-share {
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 0 15px;
+}
+
+h2 {
+    color: #ff2b06;
+    margin-bottom: 15px;
+}
+
+/* Speaker Bio */
+.speaker-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.speaker-content img {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+/* Share Icons */
+.social-icons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.social-icon {
+    background-color: #222;
+    color: #fff;
+    font-size: 1.2rem;
+    padding: 12px;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+    background-color: #ff2b06;
+    transform: scale(1.2);
+}
+
+/* CTA Button */
+.cta-button {
+    display: inline-block;
+    background-color: #ff2b06;
+    color: #fff;
+    padding: 12px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.cta-button:hover {
+    background-color: #d81c00;
+    transform: translateY(-2px);
+}
+
+/* Footer */
+footer {
+    background-color: #111;
+    padding: 20px;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #bbb;
+}
+
+/* Animations */
+.fade-in-down {
+    animation: fadeInDown 1s ease-out;
+}
+
+.fade-in-up {
+    opacity: 0;
+    transform: translateY(40px);
+    animation: fadeInUp 1s ease forwards;
+}
+
+.fade-in-zoom {
+    animation: zoomIn 1s ease-out;
+}
+
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-40px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes zoomIn {
+    from { transform: scale(0.9); opacity: 0; }
+    to { transform: scale(1); opacity: 1; }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .speaker-content {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
