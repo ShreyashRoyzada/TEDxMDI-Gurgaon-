@@ -502,3 +502,15 @@ footer {
     0% {opacity: 0; transform: translateY(20px);}
     100% {opacity: 1; transform: translateY(0);}
 }
+
+
+/* Force center alignment for footer icons on past talk pages */
+footer .social-links {
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
